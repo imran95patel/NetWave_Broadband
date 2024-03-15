@@ -44,7 +44,7 @@ const HeroSection = () => {
           }`}
         />
       ))}
-      <div className="absolute inset-0 bg-gradient-to-tr from-black via-gray-100 to-transparent opacity-50 backdrop-filter backdrop-blur-3xl"></div>
+      <div className="absolute inset-0 bg-gradient-to-tr from-black via-gray-400 to-transparent opacity-60 backdrop-filter backdrop-blur-3xl"></div>
       <div className="content absolute inset-0 flex flex-col justify-center items-start text-black z-10">
         <h1 className="text-5xl font-black mt-16 ml-20 ">
           <span>Stop wasting time. Start</span>
