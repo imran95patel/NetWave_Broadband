@@ -1,7 +1,19 @@
 import React, { useState } from "react";
 import { FaBars, FaRegWindowClose } from "react-icons/fa";
+import RegisterDialog from "./Pages/RegisterDialog";
+
 
 const Navbar = () => {
+  const [showMyModal,setShowMyModal] = useState(false)
+
+  const showModalHandclick = ()=>{
+      setShowMyModal(true)
+      console.log("opennnnn");
+  }
+
+  const handleOnClose = ()=>{
+    setShowMyModal(false)
+  }
   const [open, setOpen] = useState(false);
 
   const links = [
@@ -13,7 +25,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-black 700 rounded-b-sm">
+    <>
+     <div className="bg-black 700 rounded-b-sm">
       <nav className="md:flex items-center justify-between py-4 md:px-10 px-7">
         {/* Brand/logo */}
         <div className="font-Rancho font-bold text-2xl cursor-pointer flex items-center font-[poppings] text-white">
@@ -65,13 +78,25 @@ const Navbar = () => {
               </li>
             ))}
             {/* Example button */}
-            <button className="text-[#03e9f4] text-[20px] border-2 border-[#03e9f4] px-[30px] py-[7px] rounded hover:text-black hover:bg-[#03e9f4] my-4">
+            <button className="text-[#03e9f4] text-[20px] border-2 border-[#03e9f4] px-[30px] py-[7px] rounded hover:text-black hover:bg-[#03e9f4] my-4"
+            onClick={showModalHandclick}
+            >
               Get started
             </button>
+
           </ul>
         )}
       </nav>
+      
     </div>
+    <button className="text-[#03e9f4] text-[20px] border-2 border-[#03e9f4] px-[30px] py-[7px] rounded hover:text-black hover:bg-[#03e9f4] my-4"
+            onClick={showModalHandclick}
+            >
+              Get started
+            </button>
+    <RegisterDialog onClose={handleOnClose} visible={showMyModal}/>
+    </>
+   
   );
 };
 
