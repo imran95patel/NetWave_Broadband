@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../assets/logo.png";
-import Login from "../pages/Login";
+import Login from "../Pages/Login";
 
 const Navbar = () => {
   const [showModal, setShowModal] = React.useState(false);

@@ -1,13 +1,41 @@
 import React from "react";
 import img from "../assets/logo.png";
-import Signup from "./Signup";
+import Signup from "../Pages/Signup";
+import Axis from "axios";
 
 const Login = (props) => {
-  const [openRegister, setOpenRegister] = React.useState(false);
+  // const [openRegister, setOpenRegister] = React.useState(false);
+  const [loginForm, setLoginForm] = React.useState({ email: "", password: "" });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setLoginForm({ ...loginForm, [name]: value });
+  };
+  const handleSumbit = async (e) => {
+    e.preventDefault();
+    // console.log(loginForm);
+    try {
+      const response = await Axis.get("/api/getlogin", {
+        params: {
+          email: email,
+          password: password,
+        },
+      });
+      console.log("token: ", response);
+      localStorage.removeItem("token");
+      localStorage.setItem("token", response.data.token);
+    } catch (error) {
+      // Handle error
+      console.error("Error:", error);
+      return null;
+    }
+  };
 
   // const handleClose = () => {
   //   setOpenRegister(false); // Set openRegister to false to close the login modal
   // };
+
+  const handleLogin = () => {};
 
   return (
     <>
@@ -57,7 +85,7 @@ const Login = (props) => {
                     </button>
                   </div>
                   <div className="p-4 md:p-5">
-                    <form className="space-y-4" action="#">
+                    <form className="space-y-4" onSubmit={handleSumbit}>
                       <div>
                         <label
                           htmlFor="email"
@@ -66,13 +94,15 @@ const Login = (props) => {
                           Your email / Mobile No.
                         </label>
                         <input
-                          type="email"
+                          type="TEXT"
                           name="email"
                           id="email"
                           autoComplete="off"
                           className="bg-grey-300 border-2 border-[#03e9f4] text-grey-900 text-sm rounded-lg block w-full p-2.5 focus:bg-[#cfd1d6]"
                           placeholder="mobile no. / name@company.com"
-                          required
+                          // required
+                          value={loginForm.email}
+                          onChange={handleInputChange}
                         />
                       </div>
                       <div>
@@ -89,6 +119,8 @@ const Login = (props) => {
                           placeholder="••••••••"
                           className="bg-grey-300 border-2 border-[#03e9f4] text-grey-900 text-sm rounded-lg focus:bg-[#cfd1d6]  block w-full p-2.5 "
                           required
+                          value={loginForm.password}
+                          onChange={handleInputChange}
                         />
                       </div>
                       <div className="flex justify-between">
@@ -119,6 +151,7 @@ const Login = (props) => {
                       <button
                         type="submit"
                         className="w-full focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center text-[#03e9f4] text-[20px] border-2 border-[#03e9f4] hover:text-black hover:bg-[#03e9f4] my-4"
+                        onClick={() => handleLogin}
                       >
                         Login to your account
                       </button>
