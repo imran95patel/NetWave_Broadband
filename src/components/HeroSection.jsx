@@ -34,7 +34,7 @@ const HeroSection = () => {
   );
 
   return (
-    <div className="section_top w-full h-screen relative overflow-hidden">
+    <div className="section_top w-full h-screen relative overflow-hidden rounded-t-[40px]">
       {images.map((image, index) => (
         <img
           key={index}
