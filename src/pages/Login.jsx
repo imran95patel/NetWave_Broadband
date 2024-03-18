@@ -13,7 +13,7 @@ const Login = (props) => {
     <>
       {props.showModal ? (
         <>
-          <div className="fixed inset-0 z-20 flex justify-center items-center bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg ">
+          <div className="fixed inset-0 z-20 flex justify-center items-center bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg">
             <div
               id="authentication-modal"
               tabIndex="-1"
@@ -21,13 +21,13 @@ const Login = (props) => {
               className="overflow-y-auto overflow-x-hidden fixed flex z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
             >
               {/* Left side div with image */}
-              <div className="h-[70vh] w-[70vh] bg-zinc-400 py-10 px-10">
+              <div className="h-[70vh] w-[70vh] bg-zinc-400 py-10 px-10 rounded-l-lg">
                 <img src={img} alt="Your image" />
               </div>
 
               {/* Right side modal content */}
               <div className="relative h-[70vh] w-[70vh]">
-                <div className="relative bg-[#f1f1f1] shadow h-[70vh] ">
+                <div className="relative bg-[#f1f1f1] shadow h-[70vh] rounded-r-xl">
                   <div className="flex items-center justify-between  md:p-5 border-b rounded-t ">
                     <h3 className="text-xl font-semibold text-gray-900 ">
                       Sign in to our platform
@@ -118,15 +118,15 @@ const Login = (props) => {
                       </div>
                       <button
                         type="submit"
-                        className="w-full focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center text-[#03e9f4] text-[20px] border-2 border-[#03e9f4] hover:text-black hover:bg-[#03e9f4] my-4"
+                        className="w-full focus:ring-4 focus:outline-none font-medium rounded-lg text-sm py-1 text-center text-[#03e9f4] text-[20px] border-2 border-[#03e9f4] hover:text-black hover:bg-[#03e9f4] my-4"
                       >
                         Login to your account
                       </button>
-                      <div className="text-sm font-medium text-gray-900">
+                      <div className="text-sm font-medium text-gray-900 ">
                         Not registered?{" "}
                         <a
                           href="#"
-                          className="text-blue-700 hover:underline"
+                          className="text-blue-700 hover:underline "
                           // onClick={() => setOpenRegister(true)} // Changed to setOpenRegister
                         >
                           Create account

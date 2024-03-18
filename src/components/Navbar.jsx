@@ -10,7 +10,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="bg-zinc-900 rounded-full sticky top-0 shadow-xl shadow-[#504848]">
+      <div className="bg-zinc-900 rounded-full sticky top-0 shadow-xl shadow-[#504848] mb-[2px]">
         <nav className="flex items-center justify-between px-12">
           <div className="">
             <img src={img} alt="logo" className="w-auto h-20" />
