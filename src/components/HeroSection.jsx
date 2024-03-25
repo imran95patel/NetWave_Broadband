@@ -50,7 +50,7 @@ const HeroSection = () => {
           <span>Stop wasting time. Start</span>
         </h1>
         <span className="text-5xl font-black ml-20">connecting.</span>
-        <div className="border border-[#99CC03] h-0.5 w-16 bg-[#99CC03] ml-20 mt-5 mb-5"></div>
+        <div className="border border-[#3dc0f3] h-0.5 w-16 bg-[#3dc0f3] ml-20 mt-5 mb-5"></div>
         <h1 className="ml-20 font-semibold text-2xl">
           <span>
             Connect to the things that matter. Powering safer, smarter, more{" "}
@@ -61,18 +61,15 @@ const HeroSection = () => {
         </span>
         <div className="ml-20 font-semibold text-2xl mb-5">you.</div>
         <li className="ml-20 font-semibold text-1xl list-none mb-1">
-          <CheckmarkIcon className="h-5 w-5 text-green-500 " />
           Dedicated 24/7 customer care
         </li>
         <li className="ml-20 font-semibold text-1xl list-none mb-1">
-          <CheckmarkIcon className="h-5 w-5 text-green-500" />
           Up to 300 GB of High-Speed Data
         </li>
         <li className="ml-20 font-semibold text-1xl list-none mb-1">
-          <CheckmarkIcon className="h-5 w-5 text-green-500" />
           Plus, up to $600 in deals!*
         </li>
-        <button className="text-gray-100 font-bold py-5 px-10 rounded inline-flex items-center ml-20 mt-5 bg-[#038B1C] hover:bg-[#99CC03] text-xs transition duration-300 ease-in-out">
+        <button className="text-gray-100 font-bold py-5 px-10 rounded inline-flex items-center ml-20 mt-5 bg-[#03E9F4] hover:bg-[#3dc0f3] text-xs transition duration-300 ease-in-out">
           <span>SEE PLANS & DEALS</span>
         </button>
       </div>

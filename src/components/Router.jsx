@@ -12,7 +12,7 @@ const Router = () => {
     <div className="flex">
       <div className="left w-[50vw] h-[100vh]">
         <div className="w-full h-screen mt-48 ">
-          <span className="bg-[#99CC03] text-[#f1f1f1] rounded-sm p-1 px-4 text-sm ml-12">
+          <span className="bg-[#3dc0f3] text-[#f1f1f1] rounded-sm p-1 px-4 text-sm ml-12">
             SECURE CONNECTION
           </span>
           <div className="text-4xl font-bold ml-12 mt-8">
@@ -20,7 +20,7 @@ const Router = () => {
             <p>current standard of</p>
             <p>WiFi.</p>
           </div>
-          <button className="text-gray-100 font-bold py-3 px-8 rounded inline-flex items-center ml-12 mt-8 bg-[#038B1C] hover:bg-[#99CC03] text-xs transition duration-300 ease-in-out">
+          <button className="text-gray-100 font-bold py-3 px-8 rounded inline-flex items-center ml-12 mt-8 bg-[#03E9F4] hover:bg-[#3dc0f3] text-xs transition duration-300 ease-in-out">
             GET STARTED
           </button>
         </div>
@@ -33,7 +33,7 @@ const Router = () => {
           <p className="mt-48 w-full flex items-center">
             <FontAwesomeIcon
               icon={faEarthAmericas}
-              style={{ color: "#99CC03" }}
+              style={{ color: "#3dc0f3" }}
               className="h-10 w-10 ml-20 "
             />
             <div className="text-2xl ml-7 font-semibold">
@@ -43,7 +43,7 @@ const Router = () => {
           <p className="w-full flex items-center">
             <FontAwesomeIcon
               icon={faTv}
-              style={{ color: "#99CC03" }}
+              style={{ color: "#3dc0f3" }}
               className="h-10 w-10 ml-20"
             />
             <div className="text-2xl ml-7 font-semibold">Satellite TV</div>
@@ -51,7 +51,7 @@ const Router = () => {
           <p className="h-10 w-10 flex items-center">
             <FontAwesomeIcon
               icon={faPhone}
-              style={{ color: "#99CC03" }}
+              style={{ color: "#3dc0f3" }}
               className="h-10 w-10 ml-20"
             />
             <div className="text-2xl ml-7 font-semibold">VOIP</div>

@@ -33,11 +33,6 @@ const Navbar = () => {
             </li>
             <li className="ml-8 text-xl my-7 mr-5">
               <a className="text-white duration-500 hover:text-[#03e9f4] cursor-pointer">
-                About us
-              </a>
-            </li>
-            <li className="ml-8 text-xl my-7 mr-5">
-              <a className="text-white duration-500 hover:text-[#03e9f4] cursor-pointer">
                 Contact us
               </a>
             </li>

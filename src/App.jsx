@@ -12,7 +12,8 @@ import Fiber from "./components/Fiber";
 import Feature from "./components/Feature";
 import Support from "./components/Support";
 import Contactus from "./components/Contactus";
-// import Signup from "./pages/Signup";
+import Footer from "./components/Footer";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
       <Feature />
       <Support />
       <Contactus />
-      {/* <Signup /> */}
+      <Footer />
+      <Signup />
     </>
   );
 }
