@@ -9,6 +9,9 @@ import Promo from "./components/Promo";
 import Services from "./components/Services";
 import Experience from "./components/Experience";
 import Fiber from "./components/Fiber";
+import Feature from "./components/Feature";
+import Support from "./components/Support";
+import Contactus from "./components/Contactus";
 // import Signup from "./pages/Signup";
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
       <Services />
       <Experience />
       <Fiber />
+      <Feature />
+      <Support />
+      <Contactus />
       {/* <Signup /> */}
     </>
   );
